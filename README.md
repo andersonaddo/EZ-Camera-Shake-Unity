@@ -13,7 +13,7 @@ CameraShaker.Instance.ShakeOnce(magn, rough, fadeIn, fadeOut);
 
 It used to be available on the Unity Asset Store, but has since been removed and open sourced here.  
 
-As of the time of writing this, this package works for Unity 2018 perfectly. **The `.unitypackage` can be downloaded [here](https://github.com/andersonaddo/EZ-Camera-Shake-Unity/releases/download/v1.04/EZ.Camera.Shake.unitypackage).** PDF documentation is also included in the package.
+As of the time of writing this, this package works for Unity 2018 perfectly. **The `.unitypackage` can be downloaded [here](https://github.com/andersonaddo/EZ-Camera-Shake-Unity/releases/download/v1.0.5/EZ.Camera.Shake.v1.0.5.unitypackage).** PDF documentation is also included in the package.
 
 ## Change History
 The original version uploaded on GitHub was v1.04
