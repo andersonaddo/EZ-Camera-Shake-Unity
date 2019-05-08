@@ -7,7 +7,7 @@ namespace EZCameraShake
     public class CameraShaker : MonoBehaviour
     {
         /// <summary>
-        /// The single instance of the CameraShake in the current scene. Do not use if you have multiple instances.
+        /// The single instance of the CameraShaker in the current scene. Do not use if you have multiple instances.
         /// </summary>
         public static CameraShaker Instance;
         static Dictionary<string, CameraShaker> instanceList = new Dictionary<string, CameraShaker>();
@@ -21,9 +21,13 @@ namespace EZCameraShake
         /// </summary>
         public Vector3 DefaultRotInfluence = new Vector3(1, 1, 1);
         /// <summary>
-        /// Offset camera to desired XYZ, works if camera is not a child that follows etc.
+        /// Offset that will be applied to the camera's default (0,0,0) rest position
         /// </summary>
-        public Vector3 Offset = new Vector3(0, 0, 0);
+        public Vector3 RestPositionOffset = new Vector3(0, 0, 0);
+        /// <summary>
+        /// Offset that will be applied to the camera's default (0,0,0) rest rotation
+        /// </summary>
+        public Vector3 RestRotationOffset = new Vector3(0, 0, 0);
 
         Vector3 posAddShake, rotAddShake;
 
@@ -59,8 +63,8 @@ namespace EZCameraShake
                 }
             }
 
-            transform.localPosition = posAddShake + Offset;
-            transform.localEulerAngles = rotAddShake;
+            transform.localPosition = posAddShake + RestPositionOffset;
+            transform.localEulerAngles = rotAddShake + RestRotationOffset;
         }
 
         /// <summary>
