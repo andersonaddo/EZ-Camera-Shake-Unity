@@ -20,6 +20,10 @@ namespace EZCameraShake
         /// The default rotation influcence of all shakes created by this shaker.
         /// </summary>
         public Vector3 DefaultRotInfluence = new Vector3(1, 1, 1);
+        /// <summary>
+        /// Offset camera to desired XYZ, works if camera is not a child that follows etc.
+        /// </summary>
+        public Vector3 Offset = new Vector3(0, 0, 0);
 
         Vector3 posAddShake, rotAddShake;
 
@@ -55,7 +59,7 @@ namespace EZCameraShake
                 }
             }
 
-            transform.localPosition = posAddShake;
+            transform.localPosition = posAddShake + Offset;
             transform.localEulerAngles = rotAddShake;
         }
 
