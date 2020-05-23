@@ -30,5 +30,8 @@ Yes, now there is. When this EZ Camera Shake was created (and also around the ti
 ## 📋Change History
 The original version uploaded on GitHub was v1.04
 
+### [1.06] - 2020/05/23
+- Replaced deprecated scene management methods for demo scene.  [@HexedHero](https://github.com/HexedHero)
+
 ### [1.05] - 2019/05/08
 - Added the ability to add an offset to a camera's defualt (0,0,0) position.  [@axesve](https://github.com/axesve)
